@@ -17,6 +17,7 @@ const content = null || document.getElementById('content');
 		const response = await fetch(url, options);
 
 		const data = await response.json();
+		
 
 		let view = `
 		${data.items.map(item => `
